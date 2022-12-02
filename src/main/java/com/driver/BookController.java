@@ -34,7 +34,7 @@ public class BookController {
     
     
     //not working
-    @GetMapping("/get-all-books ")
+    @GetMapping("/get-all-books")
     public ResponseEntity<List<Book>> get_all_books(){
     	return new ResponseEntity(bookService.findAllBooks(),HttpStatus.FOUND);
     }
